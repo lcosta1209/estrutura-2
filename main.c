@@ -4,13 +4,11 @@
 
 int main() {
 
-  /*PILHA  */
+  /*PILHA*/
 
   int pilha[TAM];
   int topo = -1;
-
-  printf("PILHA\n");
-
+  
   topo++;
   pilha[topo] = 10;
 
@@ -23,24 +21,19 @@ int main() {
   for (int i = topo; i >= 0; i--) {
     printf("%d ", pilha[i]);
   }
-  printf("\n");
 
-  printf("Removido: %d\n", pilha[topo]);
+  printf("Removido: %d", pilha[topo]);
   topo--;
 
   for (int i = topo; i >= 0; i--) {
     printf("%d ", pilha[i]);
   }
-  printf("\n\n");
-
   /*FILA  */
 
   int fila[TAM];
   int inicio = 0;
   int fim = -1;
-
-  printf("FILA\n");
-
+  
   fim++;
   fila[fim] = 1;
 
@@ -53,7 +46,6 @@ int main() {
   for (int i = inicio; i <= fim; i++) {
     printf("%d ", fila[i]);
   }
-  printf("\n");
 
   printf("Removido: %d\n", fila[inicio]);
   inicio++;
@@ -61,15 +53,12 @@ int main() {
   for (int i = inicio; i <= fim; i++) {
     printf("%d ", fila[i]);
   }
-  printf("\n\n");
 
   /* DEQUE  */
 
   int deque[TAM];
   int ini = 5;
   int fimd = 4;
-
-  printf("DEQUE\n");
 
   ini--;
   deque[ini] = 50;
@@ -86,7 +75,6 @@ int main() {
   for (int i = ini; i <= fimd; i++) {
     printf("%d ", deque[i]);
   }
-  printf("\n");
 
   printf("Removido inicio: %d\n", deque[ini]);
   ini++;
@@ -97,7 +85,6 @@ int main() {
   for (int i = ini; i <= fimd; i++) {
     printf("%d ", deque[i]);
   }
-  printf("\n");
 
   return 0;
 }
