@@ -10,13 +10,13 @@ int main() {
   int topo = -1;
   
   topo++;
-  pilha[topo] = 10;
+  pilha[topo] = 1;
 
   topo++;
-  pilha[topo] = 20;
+  pilha[topo] = 2;
 
   topo++;
-  pilha[topo] = 30;
+  pilha[topo] = 3;
 
   for (int i = topo; i >= 0; i--) {
     printf("%d ", pilha[i]);
